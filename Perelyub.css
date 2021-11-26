@@ -6,8 +6,8 @@
 
 .main-body {
 	width: 80%;
-	
-	
+
+
 }
 
 .header-container {
@@ -22,6 +22,7 @@
 	padding-right: 40px;
 	font-weight: 400;
 	font-size: 16pt;
+	text-align: justify;
 }
 
 .two-svg {
@@ -41,7 +42,7 @@
 .img {
 	width: 100px;
 	padding: 20px;
-	
+
 }
 
 .header1 {
@@ -55,5 +56,5 @@
 
 .date {
 	text-align: left;
-	
+
 }

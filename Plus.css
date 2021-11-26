@@ -18,3 +18,11 @@
 	font-weight: 400;
 	font-size: 16pt;
 }
+.paragraph-ol {
+    padding-left: 70px;
+    width: 70%;
+	padding-right: 40px;
+	font-weight: 400;
+	font-size: 16pt;
+	text-align: justify;
+}
