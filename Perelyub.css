@@ -5,7 +5,12 @@
 }
 
 .main-body {
-	width: 80%;
+    width: 80%;
+    line-height: 161.8%;
+}
+
+.main-bodyconv {
+    width: 90%;
     line-height: 161.8%;
 }
 
@@ -24,6 +29,50 @@
 	text-align: justify;
         line-height: 161.8%;
         font-family: Helvetica, sans-serif;
+}
+
+.publ {
+	width: 120%;
+	padding-left: 40px;
+	padding-right: 0px;
+	font-weight: 400;
+	font-size: 16pt;
+	text-align: left;
+        line-height: 161.8%;
+        font-family: Helvetica, sans-serif;
+}
+
+.paragraphconv {
+	width: 100%;
+	padding-left: 40px;
+	padding-right: 0px;
+	font-weight: 400;
+	font-size: 16pt;
+	text-align: justify;
+        line-height: 161.8%;
+        font-family: Helvetica, sans-serif;
+}
+
+.language {
+	width: 100%;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-weight: 700;
+	font-size: 18pt;
+	text-align: justify;
+        line-height: 161.8%;
+        font-family: Helvetica, sans-serif;
+}
+
+.dedication {
+	width: 100%;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-weight: 500;
+	font-size: 18pt;
+	text-align: justify;
+        line-height: 161.8%;
+        font-family: Helvetica, cursive, sans-serif;
 }
 
 .two-svg {
@@ -57,5 +106,10 @@
 
 .date {
 	text-align: left;
+
+}
+
+.menu-right {
+     align: center;
 
 }
