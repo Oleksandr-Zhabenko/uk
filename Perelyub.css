@@ -113,3 +113,60 @@
      align: center;
 
 }
+
+.paragraph-i {
+	width: 1060px;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-weight: 400;
+	font-size: 16pt;
+	text-align: justify;
+        line-height: 161.8%;
+        font-family: Helvetica, sans-serif;
+}
+
+.publ-i {
+	width: 1060px;
+	padding-left: 40px;
+	padding-right: 0px;
+	font-weight: 400;
+	font-size: 16pt;
+	text-align: left;
+        line-height: 161.8%;
+        font-family: Helvetica, sans-serif;
+}
+
+.paragraphconv-i {
+	width: 1060px;
+	padding-left: 40px;
+	padding-right: 0px;
+	font-weight: 400;
+	font-size: 16pt;
+	text-align: justify;
+        line-height: 161.8%;
+        font-family: Helvetica, sans-serif;
+}
+
+.language-i {
+	width: 1060px;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-weight: 700;
+	font-size: 18pt;
+	text-align: justify;
+        line-height: 161.8%;
+        font-family: Helvetica, sans-serif;
+}
+
+.dedication-i {
+	width: 1060px;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-weight: 500;
+	font-size: 18pt;
+	text-align: justify;
+        line-height: 161.8%;
+        font-family: Helvetica, cursive, sans-serif;
+}
+
+
