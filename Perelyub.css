@@ -2,6 +2,7 @@
 	width: 100%;
 	display: flex;
 	direction: row;
+        background: url('./map.jpg') #f4f8ac;
 }
 
 .main-body {

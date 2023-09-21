@@ -1,0 +1,257 @@
+body {
+  background-image: url("map.jpg");
+}
+
+.links {
+  font-size: 1.1rem;
+  font-style: oblique 10deg;
+  font-family: Helvetica, Arial, sans-serif; 
+  line-height: 161%;
+}
+
+.links:link {
+  color: black;
+  background-color: rgb(255,255,255,0.6);
+}
+
+.links:visited {
+  color: rgb(250, 100, 0, 1.0);
+  background-color: rgb(255,255,255,1.0);
+  font-weight: 800; 
+}
+
+.links:hover {
+  color: rgb(0, 0, 200, 1.0);
+  background-color: rgb(255,255,255,1.0);
+  font-size: 1.7rem;
+  font-style: normal;
+}
+
+.links:active {
+  font-size: 1.8rem;
+  font-style: normal;
+}
+
+.links2 {
+  font-size: 1.1rem;
+  font-style: oblique 10deg;
+  font-family: Helvetica, Arial, sans-serif; 
+  line-height: 161%;
+}
+
+.links2:link {
+  color: black;
+  background-color: rgb(255,255,255,0.6);
+}
+
+.links2:visited {
+  color: rgb(250, 100, 0, 1.0);
+  background-color: rgb(255,255,255,1.0);
+  font-weight: 800; 
+}
+
+.links2:hover {
+  color: rgb(0, 0, 200, 1.0);
+  background-color: rgb(255,255,255,1.0);
+  font-style: normal;
+}
+
+.links2:active {
+  font-style: normal;
+}
+
+
+h2 {
+  padding: 15px;
+  line-height: 161%;
+  color: rgb(0,0,0,0.8)
+}
+
+.header-1 {
+  margin: 10px auto;
+}
+
+.greet {
+  margin: 1rem 0;
+}
+
+span {
+  text-align: center;
+  font-weight: 600;
+}
+
+.article {
+  column-count: 2;
+  column-width: 500px;
+  padding: 20px;
+  column-gap: 5%;
+  font-size: 1.2rem;
+  background-color: rgb(255,255,255,0.6);
+  line-height: 161%;
+}
+
+q {
+  font-size: 1.3rem;
+  font-style: oblique 10deg;
+  font-weight: 500;
+  text-align: justify; 
+}
+
+author {
+  font-size: 1.5rem;
+  font-style: oblique 15deg;
+  font-weight: 600;
+  text-align: center; 
+}
+
+.defcols {
+  column-width: 400px;
+}
+
+.twocols {
+  column-count: 2;
+  column-width: 600px;
+}
+
+@media (min-width: 221px) {
+  span {
+    font-size: 1rem;
+  }
+  
+  q {
+    font-size: 1.1rem;
+  }
+}
+
+@supports (display: grid) {
+  .header-1 { 
+    max-width: none;
+    margin: 10px;
+  }
+  img {
+    border: 1px solid #ddd;
+    border-radius: 3%;
+    padding: 0px;
+    width: 61%;
+  }
+
+  .chessgame {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 0px;
+    width: 91%;
+    align: center;
+  }
+  .greet {
+    margin: 0;
+  }
+
+  @media (min-width: 1081px) {
+    .header-1 {
+      display: grid;
+      grid-template-columns: 3.4fr 1fr 4.2fr 2fr;
+      grid-auto-rows: auto;
+      grid-gap: 10px;
+    }
+  }
+
+  @media (max-width: 599px) {
+    body {
+      padding: 0rem;
+    }
+
+    .header-1 {
+      display: grid;
+      grid-columns: 2;
+      grid-template-columns: 7.4fr 1fr;
+      grid-auto-rows: auto;
+      grid-gap: 10px;
+    }
+
+
+}
+
+  @media (min-width: 600px) and (max-width: 1080px) {
+    .header-1 {
+      display: grid;
+      grid-template-columns: 5.4fr 1fr 10.2fr;
+      grid-auto-rows: auto;
+      grid-gap: 5px;
+    }
+ 
+  }
+}
+
+.my-name {
+  font-family: Inter;
+  padding-left: 18px;
+  padding-top: 40px;
+  line-height: 161%;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.materials {
+  font-family: Inter;
+  padding-left: 18px;
+  padding-top: 10px;
+  line-height: 161%;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+@supports (display: flex) {
+  .menus {
+    display: flex;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 5vh;
+    padding-left: 4px;
+    padding-right: 4px;
+    flex-flow: row wrap;
+    gap: 10px;
+    flex-basis: 150px;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255,255,255,0.6);
+  }
+  
+  @media (max-width: 220px) {
+    span {
+      font-size: 0.8rem;
+    } 
+  }
+
+}
+
+.footer {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: 2vh;
+}
+
+.bold-not {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+@media  (min-width: 992px) {
+  .footer {
+    text-align: center;
+  }
+
+  .my-name {
+     text-align: center;
+  }
+
+  .materials {
+     text-align: center;
+  }
+
+}
+
+
