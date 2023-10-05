@@ -221,12 +221,14 @@ author {
   @media (max-width: 600px and min-width: 221px) {
     span {
       font-size: 1.5rem;
+      gap: 30px;
     } 
   }
  
   @media (max-width: 220px) {
     span {
       font-size: 1.7rem;
+      gap: 30px;
     } 
   }
 
