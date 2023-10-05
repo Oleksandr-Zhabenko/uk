@@ -217,10 +217,16 @@ author {
     align-items: center;
     background-color: rgb(255,255,255,0.6);
   }
-  
+ 
+  @media (max-width: 600px and min-width: 221px) {
+    span {
+      font-size: 1.5rem;
+    } 
+  }
+ 
   @media (max-width: 220px) {
     span {
-      font-size: 0.8rem;
+      font-size: 1.7rem;
     } 
   }
 
