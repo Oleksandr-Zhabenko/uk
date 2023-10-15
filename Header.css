@@ -128,11 +128,19 @@ author {
     max-width: none;
     margin: 10px;
   }
+
   img {
     border: 1px solid #ddd;
     border-radius: 3%;
     padding: 0px;
     width: 61%;
+  }
+
+  .img2 {
+    border: 1px solid #ddd;
+    border-radius: 3%;
+    padding: 0px;
+    width: 91%;
   }
 
   .chessgame {
