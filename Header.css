@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
   background-image: url("map.jpg");
   text-align: justify;
@@ -6,7 +8,7 @@ body {
 .links {
   font-size: 1.1rem;
   font-style: oblique 10deg;
-  font-family: Helvetica, Arial, sans-serif; 
+  font-family: "Open Sans", sans; 
   line-height: 161%;
 }
 
@@ -36,7 +38,7 @@ body {
 .links2 {
   font-size: 1.1rem;
   font-style: oblique 10deg;
-  font-family: Helvetica, Arial, sans-serif; 
+  font-family: "Open Sans", sans; 
   line-height: 161%;
 }
 
@@ -192,7 +194,7 @@ author {
 }
 
 .my-name {
-  font-family: Inter;
+  font-family: "Open Sans", sans;
   padding-left: 18px;
   padding-top: 40px;
   line-height: 161%;
@@ -201,7 +203,7 @@ author {
 }
 
 .materials {
-  font-family: Inter;
+  font-family: "Open Sans", sans;
   padding-left: 18px;
   padding-top: 10px;
   line-height: 161%;
