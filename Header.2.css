@@ -131,6 +131,7 @@ author {
   }
 
   img {
+    aspect-ratio: 919 / 914;
     border: 1px solid #ddd;
     border-radius: 3%;
     padding: 0px;
