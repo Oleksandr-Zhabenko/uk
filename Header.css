@@ -148,6 +148,7 @@ author {
   }
 
   .chessgame {
+    aspect-ratio: 720/840;
     margin-top: 10px;
     border: 1px solid #ddd;
     padding: 0px;
