@@ -12,18 +12,18 @@ body {
 
 .links:link {
   color: black;
-  background-color: rgb(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.6);
 }
 
 .links:visited {
-  color: rgb(250, 100, 0, 1.0);
-  background-color: rgb(255,255,255,1.0);
+  color: rgba(250, 100, 0, 1.0);
+  background-color: rgba(255,255,255,1.0);
   font-weight: 800; 
 }
 
 .links:hover {
-  color: rgb(0, 0, 200, 1.0);
-  background-color: rgb(255,255,255,1.0);
+  color: rgba(0, 0, 200, 1.0);
+  background-color: rgba(255,255,255,1.0);
   font-size: 1.7rem;
   font-style: normal;
 }
@@ -42,18 +42,18 @@ body {
 
 .links2:link {
   color: black;
-  background-color: rgb(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.6);
 }
 
 .links2:visited {
-  color: rgb(250, 100, 0, 1.0);
-  background-color: rgb(255,255,255,1.0);
+  color: rgba(250, 100, 0, 1.0);
+  background-color: rgba(255,255,255,1.0);
   font-weight: 800; 
 }
 
 .links2:hover {
-  color: rgb(0, 0, 200, 1.0);
-  background-color: rgb(255,255,255,1.0);
+  color: rgba(0, 0, 200, 1.0);
+  background-color: rgba(255,255,255,1.0);
   font-style: normal;
 }
 
@@ -65,7 +65,7 @@ body {
 h2 {
   padding: 15px;
   line-height: 161%;
-  color: rgb(0,0,0,0.8)
+  color: rgba(0,0,0,0.8)
 }
 
 .header-1 {
@@ -87,7 +87,7 @@ span {
   padding: 20px;
   column-gap: 5%;
   font-size: 1.2rem;
-  background-color: rgb(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.6);
   line-height: 161%;
 }
 
@@ -225,7 +225,7 @@ author {
     align-content: center;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.6);
   }
  
   @media (max-width: 600px and min-width: 221px) {
@@ -286,4 +286,3 @@ sources {
   font-size: 1.7rem;
   font-weight: 800;
 }
-
