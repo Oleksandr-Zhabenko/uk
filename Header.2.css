@@ -63,7 +63,8 @@ body {
 
 .inline-img = { 
     max-width: 100%; 
-    height: auto; 
+    height: auto;
+    aspect-ratio: auto;
 }
 
 h2 {
