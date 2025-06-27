@@ -62,9 +62,10 @@ body {
 }
 
 .inline-img = { 
-    max-width: 100%; 
-    height: auto;
-    aspect-ratio: auto;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: auto !important;
 }
 
 h2 {
