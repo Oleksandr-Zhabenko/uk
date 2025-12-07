@@ -3,6 +3,42 @@ body {
   text-align: justify;
 }
 
+@font-face {
+  font-family: "TeX Gyre Schola";
+  src: url("/fonts/texgyreschola/TeXGyreSchola-Regular.woff2") format("woff2"),
+       url("/fonts/texgyreschola/TeXGyreSchola-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TeX Gyre Schola";
+  src: url("/fonts/texgyreschola/TeXGyreSchola-Bold.woff2") format("woff2"),
+       url("/fonts/texgyreschola/TeXGyreSchola-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TeX Gyre Schola";
+  src: url("/fonts/texgyreschola/TeXGyreSchola-Italic.woff2") format("woff2"),
+       url("/fonts/texgyreschola/TeXGyreSchola-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TeX Gyre Schola";
+  src: url("/fonts/texgyreschola/TeXGyreSchola-BoldItalic.woff2") format("woff2"),
+       url("/fonts/texgyreschola/TeXGyreSchola-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 .links {
   font-size: 1.1rem;
   font-style: oblique 10deg;
