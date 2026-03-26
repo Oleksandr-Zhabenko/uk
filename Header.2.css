@@ -1,6 +1,8 @@
 body {
   background-image: url("map.jpg");
   text-align: justify;
+  /* Робимо TeX Gyre Schola основним шрифтом сторінки */
+  font-family: "TeX Gyre Schola", serif; 
 }
 
 @font-face {
@@ -39,16 +41,22 @@ body {
   font-display: swap;
 }
 
+/* --- СТИЛІ ПОСИЛАНЬ --- */
 .links {
   font-size: 1.1rem;
   font-style: oblique 10deg;
-  font-family: "Open Sans"; 
+  font-family: "Open Sans", sans-serif; 
   line-height: 161%;
+  display: inline-block; /* Потрібно для плавної анімації */
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease; /* Плавні переходи */
 }
 
 .links:link {
   color: black;
   background-color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  padding: 2px 8px; /* Додано трохи відступів для красивого фону кнопок */
+  border-radius: 4px;
 }
 
 .links:visited {
@@ -60,20 +68,24 @@ body {
 .links:hover {
   color: rgba(0, 0, 200, 1.0);
   background-color: rgba(255,255,255,1.0);
-  font-size: 1.7rem;
+  transform: scale(1.1); /* Плавне збільшення кнопки без ламання сітки сторінки */
   font-style: normal;
 }
 
 .links:active {
-  font-size: 1.8rem;
+  transform: scale(1.15);
   font-style: normal;
 }
 
 .links2 {
   font-size: 1.1rem;
   font-style: oblique 10deg;
-  font-family: "Open Sans"; 
+  font-family: "Open Sans", sans-serif; 
   line-height: 161%;
+  /* Ці дві властивості дозволяють довгим посиланням переноситися і не вилазити за колонки */
+  overflow-wrap: break-word; 
+  word-wrap: break-word;
+  transition: all 0.2s ease;
 }
 
 .links2:link {
@@ -97,6 +109,7 @@ body {
   font-style: normal;
 }
 
+/* --- ІНШІ СТИЛІ --- */
 .inline-img { 
     max-width: 100% !important;
     width: 100% !important;
@@ -194,6 +207,7 @@ author {
     width: 91%;
     margin: 0 auto;
   }
+  
   .greet {
     margin: 0;
   }
@@ -218,9 +232,7 @@ author {
       grid-auto-rows: auto;
       gap: 10px;
     }
-
-
-}
+  }
 
   @media (min-width: 600px) and (max-width: 1080px) {
     .header-1 {
@@ -229,12 +241,11 @@ author {
       grid-auto-rows: auto;
       gap: 5px;
     }
- 
   }
 }
 
 .my-name {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   padding-left: 18px;
   padding-top: 40px;
   line-height: 161%;
@@ -243,7 +254,7 @@ author {
 }
 
 .materials {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   padding-left: 18px;
   padding-top: 10px;
   line-height: 161%;
@@ -262,7 +273,6 @@ author {
     padding-right: 4px;
     flex-flow: row wrap;
     gap: 10px;
-    flex-basis: 150px;
     align-content: center;
     justify-content: space-around;
     align-items: center;
@@ -271,18 +281,15 @@ author {
  
   @media (max-width: 600px) and (min-width: 221px) {
     span {
-      font-size: 1.5rem;
-      gap: 30px;
+      font-size: 1.1rem; /* Зменшено з 1.5rem, щоб меню не розпадалося на мобільних */
     } 
   }
  
   @media (max-width: 220px) {
     span {
-      font-size: 1.7rem;
-      gap: 30px;
+      font-size: 1.2rem; /* Зменшено з 1.7rem */
     } 
   }
-
 }
 
 .footer {
@@ -310,7 +317,6 @@ author {
   .materials {
      text-align: center;
   }
-
 }
 
 dedication {
