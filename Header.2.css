@@ -42,7 +42,7 @@ body {
 .links {
   font-size: 1.1rem;
   font-style: oblique 10deg;
-  font-family: "Open Sans", sans; 
+  font-family: "Open Sans"; 
   line-height: 161%;
 }
 
@@ -72,7 +72,7 @@ body {
 .links2 {
   font-size: 1.1rem;
   font-style: oblique 10deg;
-  font-family: "Open Sans", sans; 
+  font-family: "Open Sans"; 
   line-height: 161%;
 }
 
@@ -97,7 +97,7 @@ body {
   font-style: normal;
 }
 
-.inline-img = { 
+.inline-img { 
     max-width: 100% !important;
     width: 100% !important;
     height: auto !important;
@@ -192,7 +192,7 @@ author {
     border: 1px solid #ddd;
     padding: 0px;
     width: 91%;
-    align: center;
+    margin: 0 auto;
   }
   .greet {
     margin: 0;
@@ -203,7 +203,7 @@ author {
       display: grid;
       grid-template-columns: 3.4fr 1fr 4.2fr 2fr;
       grid-auto-rows: auto;
-      grid-gap: 10px;
+      gap: 10px;
     }
   }
 
@@ -214,10 +214,9 @@ author {
 
     .header-1 {
       display: grid;
-      grid-columns: 2;
       grid-template-columns: 7.4fr 1fr;
       grid-auto-rows: auto;
-      grid-gap: 10px;
+      gap: 10px;
     }
 
 
@@ -228,14 +227,14 @@ author {
       display: grid;
       grid-template-columns: 5.4fr 1fr 10.2fr;
       grid-auto-rows: auto;
-      grid-gap: 5px;
+      gap: 5px;
     }
  
   }
 }
 
 .my-name {
-  font-family: "Open Sans", sans;
+  font-family: "Open Sans";
   padding-left: 18px;
   padding-top: 40px;
   line-height: 161%;
@@ -244,7 +243,7 @@ author {
 }
 
 .materials {
-  font-family: "Open Sans", sans;
+  font-family: "Open Sans";
   padding-left: 18px;
   padding-top: 10px;
   line-height: 161%;
@@ -270,7 +269,7 @@ author {
     background-color: rgba(255,255,255,0.6);
   }
  
-  @media (max-width: 600px and min-width: 221px) {
+  @media (max-width: 600px) and (min-width: 221px) {
     span {
       font-size: 1.5rem;
       gap: 30px;
