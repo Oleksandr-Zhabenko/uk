@@ -1,7 +1,6 @@
 body {
   background-image: url("map.jpg");
   text-align: justify;
-  /* Робимо TeX Gyre Schola основним шрифтом сторінки */
   font-family: "TeX Gyre Schola", serif; 
 }
 
@@ -41,21 +40,31 @@ body {
   font-display: swap;
 }
 
-/* --- СТИЛІ ПОСИЛАНЬ --- */
+.content {
+  padding-top: 10px;
+  padding-left: 15px;
+  border-left: 3px solid rgba(0, 0, 200, 0.2);
+  margin-bottom: 20px;
+}
+
+details {
+  margin-bottom: 10px;
+}
+
 .links {
   font-size: 1.1rem;
   font-style: oblique 10deg;
   font-family: "Open Sans", sans-serif; 
   line-height: 161%;
-  display: inline-block; /* Потрібно для плавної анімації */
-  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease; /* Плавні переходи */
+  display: inline-block;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .links:link {
   color: black;
   background-color: rgba(255,255,255,0.6);
   text-decoration: none;
-  padding: 2px 8px; /* Додано трохи відступів для красивого фону кнопок */
+  padding: 2px 8px;
   border-radius: 4px;
 }
 
@@ -68,7 +77,7 @@ body {
 .links:hover {
   color: rgba(0, 0, 200, 1.0);
   background-color: rgba(255,255,255,1.0);
-  transform: scale(1.1); /* Плавне збільшення кнопки без ламання сітки сторінки */
+  transform: scale(1.1);
   font-style: normal;
 }
 
@@ -82,7 +91,6 @@ body {
   font-style: oblique 10deg;
   font-family: "Open Sans", sans-serif; 
   line-height: 161%;
-  /* Ці дві властивості дозволяють довгим посиланням переноситися і не вилазити за колонки */
   overflow-wrap: break-word; 
   word-wrap: break-word;
   transition: all 0.2s ease;
@@ -109,7 +117,6 @@ body {
   font-style: normal;
 }
 
-/* --- ІНШІ СТИЛІ --- */
 .inline-img { 
     max-width: 100% !important;
     width: 100% !important;
@@ -139,6 +146,8 @@ span {
 .article {
   column-count: 2;
   column-width: 500px;
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
   padding: 20px;
   column-gap: 5%;
   font-size: 1.2rem;
@@ -281,13 +290,13 @@ author {
  
   @media (max-width: 600px) and (min-width: 221px) {
     span {
-      font-size: 1.1rem; /* Зменшено з 1.5rem, щоб меню не розпадалося на мобільних */
+      font-size: 1.1rem;
     } 
   }
  
   @media (max-width: 220px) {
     span {
-      font-size: 1.2rem; /* Зменшено з 1.7rem */
+      font-size: 1.2rem;
     } 
   }
 }
@@ -332,4 +341,48 @@ reading {
 sources {
   font-size: 1.7rem;
   font-weight: 800;
+}
+
+details {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border: 1px solid rgba(0, 0, 200, 0.2);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.2s ease;
+}
+
+details:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 200, 0.15);
+}
+
+summary {
+  padding: 15px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 200, 0.05);
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+summary:hover {
+  background-color: rgba(0, 0, 200, 0.1);
+}
+
+summary h4 {
+  margin: 0;
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+details[open] summary {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid rgba(0, 0, 200, 0.2);
+  background-color: rgba(0, 0, 200, 0.08);
+}
+
+.content {
+  padding: 20px;
+  line-height: 161%;
 }
