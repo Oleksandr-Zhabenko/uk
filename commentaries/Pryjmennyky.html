@@ -373,10 +373,11 @@
       border-radius: 8px;
       margin-bottom: 15px;
       transition: box-shadow 0.2s ease;
-    }
-    
-    details:hover {
-      box-shadow: 0 4px 12px rgba(0, 0, 200, 0.15);
+      
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
     }
     
     summary {
@@ -387,6 +388,22 @@
       transition: background-color 0.2s ease;
       display: flex;
       align-items: center;
+      
+      width: 100%;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+      word-break: break-word;
+    }
+    
+    .content {
+      padding: 20px;
+      line-height: 161%;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    details:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 200, 0.15);
     }
     
     summary:hover {
@@ -406,10 +423,6 @@
       background-color: rgba(0, 0, 200, 0.08);
     }
     
-    .content {
-      padding: 20px;
-      line-height: 161%;
-    }
     .outer-overlay {
       background: rgba(255,255,255,0.3);
       margin: 10px;
