@@ -46,7 +46,7 @@ body {
   font-family: "Open Sans", sans-serif; 
   line-height: 161%;
   display: inline-block;
-  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .links:link {
@@ -69,11 +69,6 @@ body {
   font-style: normal;
 }
 
-.links:active {
-  transform: scale(1.15);
-  font-style: normal;
-}
-
 .links2 {
   font-size: 1.1rem;
   font-style: oblique 10deg;
@@ -81,7 +76,6 @@ body {
   line-height: 161%;
   overflow-wrap: break-word; 
   word-wrap: break-word;
-  transition: all 0.2s ease;
 }
 
 .links2:link {
@@ -92,17 +86,11 @@ body {
 .links2:visited {
   color: rgba(250, 100, 0, 1.0);
   background-color: rgba(255,255,255,1.0);
-  font-weight: 800; 
 }
 
 .links2:hover {
   color: rgba(0, 0, 200, 1.0);
   background-color: rgba(255,255,255,1.0);
-  font-style: normal;
-}
-
-.links2:active {
-  font-style: normal;
 }
 
 .inline-img { 
