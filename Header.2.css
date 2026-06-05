@@ -1,5 +1,12 @@
 body {
-  background-image: url("map.jpg");
+  background-image: -webkit-image-set(
+    url("map.webp") type("image/webp"),
+    url("map.jpg") type("image/jpeg")
+  );
+  background-image: image-set(
+    url("map.webp") type("image/webp"),
+    url("map.jpg") type("image/jpeg")
+  );
   text-align: justify;
   font-family: "TeX Gyre Schola", serif; 
 }
